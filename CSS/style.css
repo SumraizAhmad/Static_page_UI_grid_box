@@ -1,0 +1,109 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  /* background-color: rgb(240, 240, 240); */
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+body {
+  /* height: 150vh; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(240, 240, 240);
+}
+.container {
+  width: 1000px;
+  /* height: 600px; */
+  /* background-color: aquamarine; */
+  display: grid;
+  grid-template-areas:
+    "Area1 Area1 Area2 Area3"
+    " Area4 Area5 Area5 Area3";
+  gap: 1.3rem;
+}
+.item {
+  /* background-color: blueviolet; */
+  border-radius: 1rem;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.item1 {
+  grid-area: Area1;
+  background-color: blueviolet;
+  width: 500px;
+}
+.item2 {
+  grid-area: Area2;
+  background-color: rgb(87, 87, 87);
+  width: 250px;
+}
+.item3 {
+  grid-area: Area3;
+  background-color: rgb(255, 255, 255);
+  width: 250px;
+}
+.item4 {
+  grid-area: Area4;
+  background-color: rgb(255, 255, 255);
+  width: 250px;
+}
+.item5 {
+  grid-area: Area5;
+  background-color: rgb(0, 0, 0);
+  width: 500px;
+}
+
+.item1_inner_box {
+  /* background-color: #733FC7; */
+  padding: 2rem;
+}
+.frame1 {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  margin-top: 10px;
+}
+.logo > img {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+}
+
+.text_color_white {
+  color: white;
+}
+
+.para_heading {
+  font-weight: 600;
+}
+.paragraph_white {
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.5);
+}
+.paragraph_black {
+  font-size: 13px;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+/* Media queries  */
+@media screen and (max-width: 425px) {
+  .container {
+    width: 1000px;
+    /* height: 600px; */
+    /* background-color: aquamarine; */
+    display: grid;
+    grid-template-areas:
+      "Area1 "
+      "Area2"
+      "Area3"
+      "Area4"
+      "Area5";
+    gap: 1.3rem;
+    padding: 20px;
+  }
+  .item{
+    width: 300px;
+    margin: auto;
+  }
+}
+/* Media queries  */
